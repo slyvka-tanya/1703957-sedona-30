@@ -1,0 +1,367 @@
+/* Index */
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-black: #000000;
+  --basic-extra-gray: #888888;
+  --basic-blue-light: #81B3D2;
+  --basic-black-light: #333333;
+  --basic-silver: #EEEEEE;
+  --basic-brown: #766357;
+  --basic-light-gray: #F2F2F2;
+  --basic-gray: #6A6A6A;
+  --basic-blue: #5496BD;
+  --basic-blue-extra: #669EC0;
+  --basic-brown-extra: #604E43;
+  --basic-brown-dark: #503E33;
+  --basic-extra-white: #F2F2F2;
+  --basic-dark-white: #EBEBEB;
+  --basic-gray-brown: #BDBBBC;
+  --basic-dark-gray: #ABABAB;
+  --basic-black-gray: #666666;
+  --basic-gray-white: #CACACA;
+  --basic-gray-black: #A9A9A9;
+  --basic-extra-black: #231f20;
+  --basic-gray-gray: #E5E5E5;
+}
+
+/* Global */
+
+.page-body {
+  position: absolute;
+  width: 1200px;
+  height: 2762px;
+  left: 40px;
+  top: 0px;
+  background: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  text-align: center;
+}
+
+.tittle{
+  display: none;
+}
+
+
+/* Main navigation */
+
+.side-navigation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+}
+
+/* Main */
+.text {
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+.slogan {
+  font-weight: bold;
+}
+
+.items {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.center-item1 .center-item2 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.subtitle-color {
+  background: var(--basic-blue-light);
+  color: var(--basic-white);
+}
+
+.text2 {
+  font-size: 30px;
+  line-height: 24px;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+}
+
+.slogan2 {
+  font-weight: bold;
+}
+
+
+/* Search */
+
+.search {
+  margin: auto;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 50px;
+  width: 568px;
+  height: 86px;
+  color: var(--basic-white);
+  background: var(--basic-brown);
+  border: 1px solid var(--basic-black)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-search {
+  background-color: var(--basic-extra-white);
+}
+
+.button-search {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  text-transform: uppercase;
+  background: var(--basic-blue-light);
+}
+
+/* Footer */
+
+.main-footer {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  display: flex;
+}
+
+.footer-contacts {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+ text-decoration: none;
+}
+
+.social-button {
+  width: 46;
+  height: 48;
+  background: var(--basic-blue-light);
+}
+
+.img-logo-footer{
+  color: var(--basic-extra-black);
+}
+
+
+/* Hover and Focus  */
+
+.search:hover {
+  background-color: var(--basic-brown-extra);
+}
+.search:focus {
+  background-color: var(--basic-brown-dark);
+  opacity: 30%;
+}
+
+.start_date:hover {
+  background-color: var(--basic-dark-white);
+}
+.start_date:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-gray-gray);
+}
+
+.finish_date:hover {
+  background-color: var(--basic-dark-white);
+}
+.finish_date:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-gray-gray);
+}
+
+.calendar:hover {
+  background-color: var(--basic-black);
+}
+.calendar:focus {
+  background-color: var(--basic-blue-light);
+}
+
+.button-search:hover {
+  background-color: var(--basic-blue-extra);
+}
+.button-search:focus {
+  background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+  background-color: var(--basic-blue-extra);
+}
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
+
+.img-logo-footer:hover {
+  background-color: var(--basic-blue-light);
+}
+.img-logo-footer:focus {
+  background-color: var(--basic-gray-brown);
+}
+
+
+
+
+/* Catalog */
+/* Main Catalog */
+
+.filter-form, .filter-button {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-image: url(img/catalog/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--basic-extra-gray);
+  text-transform: uppercase;
+  display: flex;
+}
+
+.filter-items {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+}
+
+.price-table {
+  width: 317px;
+  height: 36px;
+  border: 2px solid var(--basic-white);
+  box-sizing: border-box;
+  border-radius: 2px
+}
+
+.found {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.sorting, .items-sorting {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.sorting-price {
+  color: var(--basic-blue-light);
+}
+
+.sorting-type {
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sorting-rating {
+  opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-blue-light);
+}
+
+/* Search Hotel  */
+
+.hotel {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  display: flex;
+  height: 454px;
+}
+
+.name-hotel {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.details-hotel {
+  color: var(--basic-black-light);
+}
+
+.rating-hotel {
+  color: var(--basic-black-gray);
+  background-color: var(--basic-extra-white);
+  width: 110px;
+  height: 27px;
+}
+
+.button-details {
+  font-family: PT Sans;
+  width: 110px;
+  height: 27px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+  border: none;
+}
+
+.button-reserve {
+  font-family: PT Sans;
+  width: 142px;
+  height: 27px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basic-white);
+  border: none;
+  background-color: var(--basic-brown);
+}
+
+/* Hover and Focus Catalog  */
+
+.filter-button:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: none;
+}
+
+.checkbox:disabled {
+  color: var(--basic-gray);
+}
+
+.name-hotel:hover {
+  color: var(--basic-blue-light);
+}
+.name-hotel:focus {
+  opacity: 30%;
+}
+
+.button-details:hover {
+  background-color: var(--basic-blue-extra) ;
+}
+.button-details:focus {
+  background-color: var(--basic-blue) ;
+  opacity: 30%;
+}
+
+.button-reserve:hover {
+  background-color: var(--basic-brown-extra) ;
+}
+.button-reserve:focus {
+  background-color: var(--basic-brown-dark) ;
+  opacity: 30%;
+}
