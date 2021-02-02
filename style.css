@@ -39,7 +39,7 @@
   text-align: center;
 }
 
-.tittle{
+.hidden {
   display: none;
 }
 
@@ -62,7 +62,7 @@
 
 /* Main */
 
-.text {
+.text-column-first {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-.slogan {
+.slogan-column-first {
   font-weight: bold;
 }
 
@@ -98,7 +98,7 @@
   color: var(--basic-white);
 }
 
-.text2 {
+.text-column-last {
   font-size: 30px;
   line-height: 24px;
   text-transform: uppercase;
@@ -106,7 +106,7 @@
   text-align: center;
 }
 
-.slogan2 {
+.slogan-column-last {
   font-weight: bold;
 }
 
