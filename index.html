@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -16,10 +16,6 @@
 
   <header class="main-header">
 
-    <a class="main-header-logo">
-      <img src="img/index/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
-    </a>
-
     <nav class="main-navigation">
       <div class="select-navigation">
       <ul class="site-navigation">
@@ -28,6 +24,9 @@
         <li><a  class="navigation" href="blank.html">Карта штата</a></li>
         <li><a  class="navigation" href="blank.html">Гостиницы</a></li>
       </ul>
+      <a class="main-header-logo">
+        <img src="img/index/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
+      </a>
       </div>
     </nav>
 
@@ -42,7 +41,7 @@
       <img src="img/index/welcome.png" width="456.65" height="350.88" alt="Welcome">
     </div>
 
-    <section>
+    <section class="container">
       <h2 class="hidden">Преимущества</h2>
 
        <div class="text-column-first">
@@ -52,50 +51,58 @@
 
       <ul class="items">
         <li class="center-item1 subtitle-color">
-          <h3 class="subtitle ">Настоящий городок</h3>
+          <div class="features">
+          <h3 class="subtitle ">Настоящий<br> городок</h3>
           <p>-№1-</p>
           <p>Седона- не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
           <p><img src="img/index/image.jpg" width="800" height="256" alt="Город"></p>
         </li>
-        <li class="center-list">
+          <div class="services">
+        <li class="center-list" >
+          <div><img src="img/index/icon-1.png" width="75" height="72" alt="Иконка"></div>
           <h3 >Жилье</h3>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          <p><img src="img/index/icon-1.png" width="75" height="72" alt="Иконка"></p>
 
         </li>
         <li class="center-list">
+          <div><img src="img/index/icon-3.png" width="75" height="70" alt="Иконка"></div>
           <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            <p><img src="img/index/icon-3.png" width="75" height="70" alt="Иконка"></p>
 
         </li>
         <li class="center-list">
+          <div><img src="img/index/icon-1.png" width="64" height="77" alt="Иконка"></div>
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производсва!</p>
-          <p><img src="img/index/icon-1.png" width="64" height="77" alt="Иконка"></p>
+        </div>
 
         </li>
         <li class="center-item1 subtitle-color">
-          <h3 class="subtitle ">Там есть мост дьявола</h3>
+          <div class="features">
+          <h3 class="subtitle ">Там есть<br> мост дьявола</h3>
           <p>-№2-</p>
           <p>Да, по нему можна пройти! если конечно вы осмелитись</p>
+        </div>
           <p><img src="img/index/image2.jpg" width="800" height="256" alt="Мост Дьявола"></p>
         </li>
+        <div class="services benefits">
         <li class="center-item2">
-          <h3 class="subtitle">Небольшая площадь</h3>
+          <h3 class="subtitle">Небольшая<br> площадь</h3>
           <p>-№3-</p>
           <p>Все достопримечательности находяться очень близко</p>
         </li>
         <li class="center-item2">
-          <h3 class="subtitle">Красивая дорога</h3>
+          <h3 class="subtitle">Красивая<br> дорога</h3>
           <p>-№4-</p>
           <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <li class="center-item2">
-          <h3 class="subtitle">Мало туристов</h3>
+          <h3 class="subtitle">Мало<br> туристов</h3>
           <p>-№5-</p>
           <p>Большинтсво едет в гранд каньйон и толпится там</p>
         </li>
+        </div>
       </ul>
     </section>
 
@@ -133,7 +140,7 @@
   </main>
 
   <footer class="main-footer">
-
+    <div class="container">
     <section>
       <h2 class="hidden">Телефонные данные</h2>
       <p class="footer-contacts">#visitsedona <br>
@@ -177,6 +184,7 @@
           </a>
         </div>
     </section>
+  </div>
   </footer>
 
   </body>
