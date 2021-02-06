@@ -30,18 +30,18 @@
 /* Global */
 
 .page-body {
-  position: absolute;
   width: 1200px;
-  height: 2762px;
-  left: 40px;
-  top: 0px;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
   background: var(--basic-white);
   box-shadow: var(--bacic-black-shadow);
-  text-align: center;
-  min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-
 }
 
 .hidden {
@@ -57,13 +57,10 @@
 .main-navigation {
   display: grid;
 }
+
 .select-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
-  padding: 0 10px;
 }
-
 
 /* Main navigation */
 
@@ -74,8 +71,8 @@
   background-repeat: no-repeat;
 }
 
-
 .site-navigation {
+  width: 100%;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -84,28 +81,34 @@
   margin: 0;
   padding: 0;
   text-align:left;
+  display: grid;
+grid-template-columns: 134px 556px 159px 147px;
 }
 
 .navigation {
   color: var(--basic-black);
   text-decoration: none;
+  padding-left: 73px;
 }
 
 .main-header-logo {
-  justify-self: center;
+  position: absolute;
 }
 
 .services {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
-  height: 256px;
-  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 62px;
 }
+
+.icon-services {margin-top: 60px;}
 
 .subtitle-color {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-template-rows: 256px;
   color: var(--basic-white);
 }
 
@@ -118,15 +121,15 @@
 }
 
 .text-column-first {
-  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-  height: 216px;
+  height:218px;
 }
 
 .slogan-column-first {
+  font-size: 21px;
   font-weight: bold;
 }
 
@@ -137,41 +140,41 @@
   margin: 0;
 }
 
-
-.benefits {
-  background-color: var(--basic-silver);
-}
-
-.center-item2{
-  padding: 20px;
-}
-
-.center-item1 .center-item2 {
-  font-size: 14px;
-  line-height: 21px;
-}
-
 .subtitle {
   font-weight: bold;
   font-size: 21px;
 }
 
+.offers{
+font-size: 21px;
+font-weight: bold;
+}
+
 .features {
   background: var(--basic-blue-light);
-  background-size: 400 256 ;
+  background-size: 400px 256px ;
+}
+
+.benefits {
+  background-color: var(--basic-silver);
+}
+
+.center-list{
+  padding: 20px;
 }
 
 .text-column-last {
-  font-size: 30px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
-  align-items: center;
   text-align: center;
-  height: 234px;
-  padding-top: 57px;
+  height: 291px;
+  padding-top: 58px;
 }
 
 .slogan-column-last {
+  font-size: 30px;
+  line-height: 24px;
   font-weight: bold;
 }
 
@@ -226,8 +229,8 @@
 
 .social-button {
   background: var(--basic-blue-light);
-  width: 46;
-  height: 48;
+  width: 46px;
+  height: 48px;
   padding: 15px;
 }
 
@@ -332,6 +335,10 @@
 
 /* Main Catalog */
 
+.center-catalog {
+min-height: 100%;
+}
+
 .filter-form, .filter-button {
   font-size: 14px;
   line-height: 21px;
@@ -372,6 +379,7 @@
 }
 
 .sorting, .items-sorting {
+  padding: 10px;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
@@ -397,10 +405,13 @@
 /* Search Hotel  */
 
 .hotel {
+  padding: 30px 73px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  height: 454px;
+  text-align: start;
+  display: grid;
+
 }
 
 .name-hotel {

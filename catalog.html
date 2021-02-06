@@ -14,11 +14,7 @@
   </head>
   <body class="page-body">
 
-  <header>
-
-    <a class="main-header-logo" href="index.html">
-      <img src="img/catalog/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
-    </a>
+  <header class="main-header">
 
     <nav class="main-navigation">
       <div class="select-navigation">
@@ -28,12 +24,15 @@
         <li><a  class="navigation" href="blank.html">Карта штата</a></li>
         <li><a  class="navigation" href="blank.html">Гостиницы</a></li>
       </ul>
+      <a class="main-header-logo">
+        <img src="img/index/logo.png" width="138" height="70" alt="Логотип сайта городка Седона">
+      </a>
       </div>
     </nav>
 
   </header>
 
-  <main>
+  <main class="center-catalog">
 
     <h1 class="hidden">Поиск гостиниц</h1>
 
@@ -88,7 +87,8 @@
 
     </section>
 
-    <section class="result">
+    <section class="inference">
+      <div class="results">
       <h2 class="found">Найдено:3</h2>
 
       <p class="sorting">Сортировка:</p>
@@ -100,12 +100,13 @@
         <li>
           <img src="img/catalog/icon-up-dir.svg" width="11" height="10" alt="Стрелка вверх">
           <img src="img/catalog/icon-down-dir.svg" width="11" height="10" alt="Стрелка вниз">
-
         </li>
      </ul>
+      </div>
 
      <ul class="items hotel">
        <li>
+         <div class="info-hotel">
          <a>
          <h3 class="name-hotel">Amara Resort & Spa</h3>
          <p>
@@ -114,6 +115,8 @@
          </a>
          <p class="details-hotel">Гостинница</p>
          <p class="details-hotel">От 4000</p>
+        </div>
+         <div class="second-column">
          <p class="rating-hotel">Рейтинг:8,5</p>
          <p>
           <img src="img/catalog/star.svg" width="19" height="17" alt="звезды">
@@ -122,6 +125,7 @@
           <img src="img/catalog/star.svg" width="19" height="17" alt="звезды">
           <img src="img/catalog/star.svg" width="19" height="17" alt="звезды">
           </p>
+        </div>
          <button class="button-details" type="submit">Подробнее</button>
          <button class="button-reserve" type="submit">Забронировать</button>
        </li>
@@ -164,7 +168,7 @@
   </main>
 
   <footer class="main-footer">
-
+    <div class="container">
     <section>
       <h2 class="hidden">Телефонные данные</h2>
       <p class="footer-contacts">#visitsedona <br>
@@ -208,6 +212,7 @@
           </a>
         </div>
     </section>
+  </div>
   </footer>
 
   </body>
