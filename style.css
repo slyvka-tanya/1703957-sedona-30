@@ -55,12 +55,18 @@
 }
 
 .main-navigation {
-  display: grid;
+  height: 50px;
+  position: relative;
+  margin: auto;
 }
 
-.select-navigation {
-  display: grid;
+
+
+.main-header-logo {
+  position: absolute;
+  transform: translateX(385%);
 }
+
 
 /* Main navigation */
 
@@ -79,21 +85,23 @@
   text-transform: uppercase;
   list-style: none;
   margin: 0;
-  padding: 0;
-  text-align:left;
+  padding: 15px;
   display: grid;
-grid-template-columns: 134px 556px 159px 147px;
+  grid-template-columns:100px 100px 100px 100px;
+  justify-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
   color: var(--basic-black);
   text-decoration: none;
-  padding-left: 73px;
+  text-align: center;
 }
+.navigation:nth-child(3) {
 
-.main-header-logo {
-  position: absolute;
 }
+.information{padding-left: 73px;}
+.nav-hotel{padding-right: 73px;}
 
 .services {
   display: grid;
