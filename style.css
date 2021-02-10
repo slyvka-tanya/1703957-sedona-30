@@ -59,7 +59,8 @@
 
 .main-header-logo {
   position: absolute;
-  left: 531px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .site-navigation {
@@ -75,24 +76,19 @@
   grid-template-columns:1fr 1fr 1fr 1fr;
 }
 
-
 .navigation {
   color: var(--basic-black);
   text-decoration: none;
 }
-.information {
-}
+
 .photo {
  margin-right: 150px;
-
 }
 
 .maps {
 margin-left: 120px;
+}
 
-}
-.name-hotel{
-}
 /* Main */
 
 .image-background {
@@ -148,7 +144,6 @@ margin-left: 120px;
 
 .center-index {
   padding: 0px 40px 0px 40px;
-
 }
 
 .subtitle {
@@ -197,10 +192,6 @@ margin: 28px 0 25px 0;
 
 
 /* Search */
-
-.main-form {
-
-}
 
 .search {
   margin: auto;
@@ -256,21 +247,29 @@ margin: 28px 0 25px 0;
   text-decoration: none;
 }
 
-.social {
-  margin: 20px;
- display: flex;
- flex-direction: row;
- justify-content: center;
- gap: 5px;
-
-}
-
-.social-icon {
+.networks{
   width: 46px;
   height: 48px;
   background: var(--basic-blue-light);
 }
 
+.social {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
+}
+
+.social-button {
+  display: flex;
+  width:100%;
+  height: 100%;
+}
+
+.social-icon {
+  margin: 17px;
+}
 
 .logotype {
   fill:var(--basic-extra-black);
@@ -376,8 +375,11 @@ min-height: 100%;
   background-size: cover;
   background-color: var(--basic-extra-gray);
   text-transform: uppercase;
+}
+
+.filter-form {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 .filter-items {
@@ -399,20 +401,37 @@ min-height: 100%;
   border-radius: 2px
 }
 
+.results {
+  display: grid;
+  grid-template-columns:  117px 50px 1fr;
+}
+
+
 .found {
+  margin: 29px 73px 31px 46px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
 }
-
+.sorting {
+  margin: 23px 65px;
+}
 .sorting, .items-sorting {
   padding: 10px;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr min-content;
+
+}
+
+.items-sorting {
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.sorting-icon {
 }
 
 .sorting-price {
@@ -439,7 +458,6 @@ min-height: 100%;
   text-transform: uppercase;
   text-align: start;
   display: grid;
-
 }
 
 .name-hotel {
