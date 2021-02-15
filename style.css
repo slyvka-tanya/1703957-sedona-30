@@ -255,6 +255,7 @@ margin: 28px 0 25px 0;
   line-height: 26px;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
+  align-items: center;
 }
 
 .footer-contacts {
@@ -713,6 +714,31 @@ justify-content: flex-end;
   border: none;
   background-color: var(--basic-brown);
 }
+
+.hotel-li {
+  position: relative;
+}
+
+.hotel-li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--basic-gray-gray);
+}
+
+.hotel-li:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 1200px;
+  height: 1px;
+  background-color: var(--basic-gray-gray);
+}
+
+
+
 
 /* Hover and Focus Catalog  */
 
