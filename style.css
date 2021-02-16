@@ -37,7 +37,7 @@
   width: 1200px;
   min-height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -131,19 +131,18 @@ margin-left: 120px;
 }
 
 .text-column-first {
-  padding-top: 43px;
+  margin-top: 43px;
+  margin-bottom: 51px;
   line-height: 26px;
   text-transform: uppercase;
   align-items: center;
   text-align: center;
-  height:218px;
 }
 
 .slogan-column-first {
-  height: 80px;
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 17px;
+  padding-bottom: 22px;
 }
 
 .items {
@@ -203,36 +202,172 @@ margin: 28px 0 25px 0;
 
 
 /* Search */
+.search-form {
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .search {
-  margin: auto;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 50px;
   width: 568px;
-  height: 86px;
+  height: 100%;
   color: var(--basic-white);
   background: var(--basic-brown);
-  border: 1px solid var(--basic-black);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.form-search {
-  background-color: var(--basic-extra-white);
+.form {
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  margin: 0 316px;
 }
 
 .field {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.field:first-of-type {
+  padding-top: 55px;
+}
+
+.date_label, .form-element-label {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.number_of_seniors {
+  margin-left: 55px;
+  margin-right: 17px
+}
+.number_of_children {
+  margin-left: 60px;
+
+}
+
+
+.date_input {
+margin-left: 25px;
+width: 346px;
+height: 38px;
+padding: 6px 10px 6px 12px;
+background-color: var(--basic-extra-white);
+display: flex;
+align-items: center;
+box-sizing: border-box;
+}
+
+.start-finish-date {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background:none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.calendar {
+  margin: 0 0 0 8px;
+  flex-shrink: 0;
+}
+
+.form-element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-element-group {
+  margin-left: 25px;
+  width: 114px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  background: var(--basic-extra-white);
+}
+
+.element-minus, .element-plus {
   position: relative;
-
+  width: 38px;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+  border: none;
+  flex-shrink: 0;
 }
-.field::after{
+.element-minus::before {
   position: absolute;
-  content:"";
-  background-image: url(img/index/calendar.png);
-
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 3px;
+  background-color: var(--basic-gray-black);
+  transform: translate(-50%, -50%);
 }
+
+.element-field {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 30px;
+  background-color: var(--basic-light-gray);
+  border: none;
+  text-align: center;
+}
+
+.element-plus::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 3px;
+  background-color: var(--basic-gray-black);
+  transform: translate(-50%, -50%);
+}
+
+.element-plus::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 3px;
+  background-color: var(--basic-gray-black);
+  transform: translate(-50%, -50%) rotate(-90deg) ;
+}
+
+
+.field-form-element {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
 
 .button-search {
   width: 458px;
@@ -245,6 +380,7 @@ margin: 28px 0 25px 0;
   border: none;
   text-transform: uppercase;
   background: var(--basic-blue-light);
+  margin: 50px 0;
 }
 
 /* Footer */
@@ -482,6 +618,7 @@ min-height: 100%;
   left: 260px;
 }
 
+
 .price-controls .price {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
@@ -606,9 +743,9 @@ min-height: 100%;
   column-gap: 6px;
 }
 
-.img-hotel {
+.picture-hotel {
   grid-column-start: 1;
-  grid-column-end: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end:3;
 }
@@ -669,11 +806,8 @@ display: flex;
 justify-content: flex-end;
 }
 
-.link-hotel {
- }
-
 .name-hotel {
-   font-weight: bold;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: start;
