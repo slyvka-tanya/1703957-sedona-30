@@ -194,12 +194,11 @@ margin: 28px 0 25px 0;
 }
 
 .text-column-last {
+  padding-bottom: 25px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
-  height: 291px;
-  padding-top: 58px;
 }
 
 .slogan-column-last {
@@ -233,12 +232,22 @@ margin: 28px 0 25px 0;
   justify-content: center;
 }
 
+.maps{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.reserve-form{
+  position: absolute;
+  z-index: 1;
+}
 
 .form {
   width: 568px;
   height: 395px;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
   margin: 0 316px;
+  background-color: var(--basic-white);
 }
 
 .field {
@@ -563,9 +572,7 @@ min-height: 100%;
 
 
 .filter-form {
-  padding-left: 72px;
-  padding-right: 73px;
-  padding-top: 27px;
+  padding: 27px 72px 32px 73px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
@@ -664,7 +671,7 @@ min-height: 100%;
 }
 
 .range-controls .toggle-max {
-  left: 260px;
+  left: 215px;
 }
 
 
@@ -679,27 +686,35 @@ min-height: 100%;
 }
 
 .price-controls {
-  padding-left: 52px;
-  padding-top: 6px;
+  position: relative;
+  padding: 0 auto;
   width: 317px;
   height: 30px;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-
 }
 
-.min-value {
-  width: 56px;
+.min-value{
+  width: 34px;
+  text-align: end;
 }
 
 .max-value {
   width: 83px;
+  text-align: end;
+}
+
+.price-border {
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background-color: var(--basic-white);
 }
 
 .filter-button {
-  margin-bottom: 32px;
   width: 137px;
   height: 36px;
   border: 2px solid var(--basic-white);
