@@ -68,16 +68,16 @@
 }
 
 .site-navigation {
-  width: 100%;
+  margin: 0;
+  padding: 15px 73px 15px 72px;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   list-style: none;
   margin: 0;
-  padding: 15px 0px 15px 0px;
   display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-columns:240px 320px 270px 227px;
 }
 
 .navigation {
@@ -85,13 +85,14 @@
   text-decoration: none;
 }
 
-.photo {
- margin-right: 150px;
+.navigation-left {
+  text-align: left;
+}
+.navigation-right {
+  text-align: right ;
 }
 
-.maps {
-margin-left: 120px;
-}
+
 
 /* Main */
 

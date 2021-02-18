@@ -24,10 +24,18 @@
            </a>
         </div>
       <ul class="site-navigation">
+        <div class="navigation-left">
         <li><a class="information navigation" href="catalog.html">Информация</a></li>
+      </div>
+        <div class="navigation-left">
         <li><a class="photo navigation" href="blank.html">Фото и видео</a></li>
+      </div>
+      <div class="navigation-right">
         <li><a  class="maps navigation" href="blank.html">Карта штата</a></li>
+      </div>
+        <div class="navigation-right">
         <li><a  class="nav-hotel navigation" href="blank.html">Гостиницы</a></li>
+      </div>
       </ul>
       </div>
     </nav>
@@ -52,12 +60,12 @@
           </li>
           <li class="checkbox">
             <input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
-            <label class="filter-services" for="filter-services">Парковка</label>
+            <label class="filter-services" for="filter-parkin">Парковка</label>
             <span class="checkbox-image"></span>
           </li>
           <li class="checkbox">
             <input class="visually-hidden" type="checkbox" name="Wi-fi" id="filter-wi-fi">
-            <label class="filter-services" for="filter-services">Wi-fi</label>
+            <label class="filter-services" for="filter-wi-fi">Wi-fi</label>
             <span class="checkbox-image"></span>
           </li>
         </ul>
@@ -68,17 +76,17 @@
         <ul class="items items-checkbox">
           <li class="checkbox">
             <input class="visually-hidden checkbox-checked" type="checkbox" name="hotel" id="filter-hotel" checked>
-            <label class="filter-services" for="filter-services">Гостинница</label>
+            <label class="filter-services" for="filter-hotel">Гостинница</label>
             <span class="checkbox-image"></span>
           </li>
           <li class="checkbox">
             <input class="visually-hidden checkbox-checked"  type="checkbox" name="motel" id="filter-motel" checked>
-            <label class="filter-services" for="filter-services">Мотель</label>
+            <label class="filter-services" for="filter-motel">Мотель</label>
             <span class="checkbox-image"></span>
           </li>
           <li class="checkbox">
             <input class="visually-hidden checkbox-checked" type="checkbox" name="apartments" id="filter-apartments" checked>
-            <label class="filter-services" for="filter-services">Апартаменты</label>
+            <label class="filter-services" for="filter-apartments">Апартаменты</label>
             <span class="checkbox-image"></span>
           </li>
         </ul>
@@ -90,10 +98,11 @@
           </div>
           <div class="price-controls">
             <label class="min-price">
-             от  <input class="price min-value" type="number" name="min-price" value="0">
+            <input class="price min-value" type="text" name="min-price" value="от 0">
             </label>
+            <span class="price-border"></span>
             <label class="max-price">
-              до <input class="price max-value" type="number" name="max-price" value="3000">
+            <input class="price max-value" type="text" name="max-price" value="до 3000">
             </label>
           </div>
           <div class="range-controls">
