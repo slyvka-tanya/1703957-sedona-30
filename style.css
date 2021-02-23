@@ -111,7 +111,8 @@
 
 .center-index {
   padding: 0;
-  margin: 0
+  margin: 0;
+  padding-bottom: 35px;
 }
 
 .services {
@@ -119,12 +120,12 @@
   line-height: 21px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 6px;
 }
 
 .services-paragraph {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+  padding-top: 5px;
 }
 .icon-services {
   margin-top: 60px;
@@ -139,7 +140,9 @@
 }
 
 .center-list-paragraph {
-  padding-bottom: 54px;
+  margin: 0;
+  padding: 5px 0 55px 0;
+
 }
 
 .container{
@@ -207,27 +210,32 @@ magin: 28px 0 25px 0;
 }
 
 .benefits {
+  padding: 0;
   background-color: var(--basic-silver);
 }
 
-.center-list{
-  padding: 0px 55px 0px 55px;
-}
+
 
 .text-column-last {
   padding-bottom: 25px;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .slogan-column-last {
+  padding-top: 8px;
+  padding-bottom: 5px;
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
 }
-
+..slogan-column-last-child{
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
 
 /* Search */
 .search-form {
@@ -409,6 +417,7 @@ box-sizing: border-box;
 
 
 .button-search {
+  margin: 50px 0;
   width: 458px;
   height: 58px;
   font-family: PT Sans;
@@ -419,7 +428,7 @@ box-sizing: border-box;
   border: none;
   text-transform: uppercase;
   background: var(--basic-blue-light);
-  margin: 50px 0;
+  color: var(--basic-white);
 }
 
 
