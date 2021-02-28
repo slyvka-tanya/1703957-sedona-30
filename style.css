@@ -764,7 +764,7 @@ min-height: 100%;
   color: var(--basic-white);
   background-color: transparent;
   border: none;
-  text-align: left;
+  text-align: center;
 }
 
 .price-controls {
@@ -779,14 +779,13 @@ min-height: 100%;
   justify-content: space-around;
 }
 
+
 .min-value{
-  width: 34px;
-  text-align: end;
+  width: 14px;
 }
 
 .max-value {
-  width: 83px;
-  text-align: end;
+  width: 30px;
 }
 
 .price-border {
@@ -856,10 +855,12 @@ min-height: 100%;
 }
 
 .sorting-button{
+  font-family: "PT Sans", Arial, sans-serif;
   border: none;
   font-size: 12px;
   line-height: 18px ;
   background: none;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
