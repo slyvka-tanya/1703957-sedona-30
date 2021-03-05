@@ -1236,6 +1236,10 @@
 	background-color: var(--basic-gray-gray)
 }
 
+.footer-static{
+  position: static;
+}
+
 .filter-button:hover {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
