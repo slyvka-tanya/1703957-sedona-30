@@ -734,9 +734,8 @@
 	background-color: var(--basic-blue)
 }
 
-.path-social:active {
-	fill: var(--basic-white-opacity);
-}
+.social-button:active .social-icon
+{opacity:0.3;}
 
 .logotype:hover .path-logo {
 	fill: var(--basic-blue-light)
