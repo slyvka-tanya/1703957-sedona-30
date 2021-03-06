@@ -159,47 +159,35 @@
 	background-image: url(../img/index/shape.png);
 }
 
+.features-items{
+  width: 400px;
+}
+
 .feature-icon {
-	padding: 0;
-	margin: 0;
-	padding-bottom: 30px
+  padding-left: 25px;
+  margin: 0px 50px 81px 50px;
+  line-height: 21px;
 }
 
-.services {
-	margin-bottom: 55px;
-	line-height: 21px;
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr
-}
-
-.services-paragraph {
+.icon-text {
 	margin: 0;
 	padding: 0;
 	padding-top: 7px
 }
 
+.features-element {
+ display: flex;
+ flex-wrap: wrap;
+}
+
 .feature {
-	display: -ms-grid;
-	display: grid;
-	-ms-grid-columns: 1fr 2fr;
-	grid-template-columns: 1fr 2fr;
-	-ms-grid-rows: 256px;
-	grid-template-rows: 256px;
+ width: 100%;
 	color: var(--basic-white);
-	background: var(--basic-blue-light)
+  background: var(--basic-blue-light);
+  display: flex;
+
 }
 
-.feature>:nth-child(1) {
-	-ms-grid-row: 1;
-	-ms-grid-column: 1
-}
-
-.feature>:nth-child(2) {
-	-ms-grid-row: 1;
-	-ms-grid-column: 2
-}
 
 .center-list-paragraph {
 	margin: 0;
@@ -224,7 +212,7 @@
 
 .desc {
 	margin: 0;
-	margin-bottom: 51px;
+	margin-bottom: 50px;
 	padding: 0;
 	padding-top: 45px;
 	padding-bottom: 52 px;
@@ -245,14 +233,15 @@
 	margin: 47px 0 25px 0
 }
 
-.landspace-image {
+.feature-img {
 	width: 800px;
-	height: 256px
+  height: 256px;
+  vertical-align: middle;
 }
 
 .offers {
   position: relative;
-  margin-top: 160px;
+  margin-top: 157px;
 	font-size: 21px;
   font-weight: 700;
 }
@@ -261,7 +250,7 @@
   position: absolute;
 	content: "";
 	bottom: 50px;
-	left: 40%;
+	left: 34%;
 	width: 75px;
 	height: 72px;
   background-image: url(../img/index/icon-1.svg);
@@ -271,7 +260,7 @@
   position: absolute;
 	content: "";
 	bottom: 45px;
-	left: 40%;
+	left: 38%;
 	width: 75px;
 	height: 70px;
   background-image: url(../img/index/icon-3.svg);
@@ -281,7 +270,7 @@
   position: absolute;
 	content: "";
 	bottom: 45px;
-	left: 42%;
+	left: 38%;
 	width: 64px;
 	height: 77px;
   background-image: url(../img/index/icon-2.svg);
@@ -295,14 +284,13 @@
 .feature-title {
 	padding-top: 11px
 }
-
-.benefits {
-	padding: 0;
+.feature-list {
+	width: 400px;
 	background-color: var(--basic-silver)
 }
 
 .hotel-search {
-	padding-top: 10px;
+	padding-top: 55px;
 	font-size: 14px;
 	line-height: 24px;
 	text-transform: uppercase;
@@ -320,7 +308,7 @@
 .hotel-search-desription {
 	margin: 0;
 	padding: 0;
-	padding-top: 30px;
+	padding-top: 35px;
 	padding-bottom: 45px
 }
 
