@@ -24,7 +24,8 @@
 	--basic-extra-black: #231f20;
 	--basic-gray-gray: #E5E5E5;
 	--bacic-black-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-	--bacic-black-shadow-form: 0px 7px 15px rgba(0, 1, 1, 0.15)
+  --bacic-black-shadow-form: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  --basic-black-shadow-search-form: 0 5px 15px rgba(0, 1, 1, .2);
 }
 
 .page {
@@ -148,7 +149,7 @@
 	left: 0px;
 	height: 57px;
 	width: 1200px;
-	background-image: url(../img/index/shape.png);
+	background-image: url(../img/index/shape.svg);
 }
 
 .features-items{
@@ -207,7 +208,6 @@
 	margin-bottom: 50px;
 	padding: 0;
 	padding-top: 45px;
-	padding-bottom: 52 px;
 	line-height: 26px;
 	text-transform: uppercase;
 }
@@ -365,8 +365,8 @@
 
 .form {
   padding: 55px 55px 55px;
-	-webkit-box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
-	box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
+	-webkit-box-shadow: var(--basic-black-shadow-search-form);
+	box-shadow: var(--basic-black-shadow-search-form);
   background-color: var(--basic-white);
   animation: 1s moveDown;
 }
@@ -561,24 +561,21 @@
 	line-height: 26px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	-ms-grid-columns: 327px 400px 327px;
+	grid-template-columns: 327px 400px 327px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
 	background-color: var(--basic-white-footer);
-	width: 100%;
 	position: absolute;
 	bottom: 0;
-	left: 0;
-	right: 0
+  padding: 10px 73px 17px;
 }
 
 .footer-contacts {
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 26px;
-	margin-left: 111px
 }
 
 .number-footer {
@@ -621,16 +618,20 @@
 	justify-content: center
 }
 
-.logotype {
-	width: 115px;
-	height: 41px;
-	vertical-align: middle
+.image-logo{
+  display: flex;
+  justify-content: center;
 }
 
-.logo-footer {
-	margin: 20px;
-	margin-right: 138px
+.logotype-title{
+  display: flex;
+  align-items: center;
 }
+
+.logotype {
+	margin-left: 5px;
+}
+
 
 .logotype-img {
 	width: 115px;
@@ -887,7 +888,6 @@
 
 .price-controls {
 	position: relative;
-	padding: 0 auto;
 	width: 317px;
 	height: 30px;
 	border: 2px solid var(--basic-white);
